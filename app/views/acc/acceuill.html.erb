@@ -1,0 +1,11 @@
+<h1>Bienvenue sur notre super site de potin</h1>
+
+<%= @u.each do |t| %>
+<p>voici les liste des user avec leur music</p>
+<b><%= t.first_name %><b>
+		<%= @s.each do |x| %>
+	<br>
+	<br>
+	<b><%= x.body %><b>
+<% end %>
+<% end %>	
